@@ -83,7 +83,7 @@ function init() {
             this.classList.toggle("nemlatszik");
             $("article img")[azon].classList.toggle("nemlatszik");
             $("article img")[azon].classList.add("jobbpozicio");
-            $("article img")[azon].classList.remove("balpozicio");
+            $("article img")[azon].classList.remove("balOldalPart");
             
             hajo.push(KepObjTomb[azon].cim);
             var index = balpart.indexOf(KepObjTomb[azon].cim);
@@ -103,8 +103,8 @@ function init() {
             voltmar = false;
             var azon = this.id - 6;
             this.classList.toggle("nemlatszik");
-            $("article img")[azon].classList.toggle("nemlatszik");
-            $("article img")[azon].classList.add("balpozicio");
+            $("article img")[azon].classList.toggle("rejtettIMG");
+            $("article img")[azon].classList.add("balOldalPart");
             $("article img")[azon].classList.remove("jobbpozicio");
             hajo.push(KepObjTomb[azon].cim);
             var index = jobbpart.indexOf(KepObjTomb[azon].cim);
@@ -125,16 +125,16 @@ function init() {
         hajo.splice(index, 1);
 
         if (voltmar) {
-            this.classList.toggle("nemlatszik");
-            $("#jobb img")[azon].classList.toggle("nemlatszik");
+            this.classList.toggle("rejtettIMG");
+            $("#jobb img")[azon].classList.toggle("rejtettIMG");
             jobbpart.push(KepObjTomb[azon].cim);
             hajohelyzet = false;
             if (jobbpart.includes(KepObjTomb[1].cim) && jobbpart.includes(KepObjTomb[0].cim) && jobbpart.includes(KepObjTomb[2].cim)) {
                 alert("NYERT!");
             }
         } else {
-            this.classList.toggle("nemlatszik");
-            $("#bal img")[azon].classList.toggle("nemlatszik");
+            this.classList.toggle("rejtettIMG");
+            $("#bal img")[azon].classList.toggle("rejtettIMG");
             balpart.push(KepObjTomb[azon].cim);
             hajohelyzet = true;
         }
