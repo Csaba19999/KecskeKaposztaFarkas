@@ -1,0 +1,94 @@
+@charset "UTF-8";
+
+h1 {
+    text-align:center;
+}
+
+#csonak {
+    background-color:aqua;
+    text-align:Center;
+    background-image: url("kepek/csonak.png");
+    height:400px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+
+#csonakkep {
+    width:70%;
+}
+
+
+p, aside {
+    padding:5px;
+}
+
+header, article, aside, footer {
+    border: 1px solid black;
+    margin: 10px;
+}
+
+footer p {
+    background-color: deepskyblue;
+    padding:0px;
+    padding-bottom: 5px;
+    margin:0px;
+}
+
+.footerFormaz{
+    text-align: center;
+    font-size:20px;
+}
+.kiemel {
+    cursor: -webkit-grab; cursor: grab;
+    border: solid red 2px;
+}
+
+
+.nemlatszik {
+    display:none;
+}
+
+.balpozicio {
+    position: relative;
+    left: 180px;
+    bottom:-50px;
+}
+
+.jobbpozicio {
+    position: relative;
+    right: 260px;
+    bottom:-50px;
+}
+
+
+
+@media screen and (max-width: 600px) {
+    main {
+        width: 100%;
+        display: grid;
+
+    }
+    img{
+        width: 100px;
+        height: 100px;
+    }
+    #bal{
+        width: auto;
+    }
+    #jobb{
+        width: auto;
+    }
+    #csonak{
+        background-size: contain;
+    }
+    .balpozicio{
+       position: static;
+    }
+    .jobbpozicio {
+       position: static;
+}
+
+
+}

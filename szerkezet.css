@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+
+
+main {
+    display:grid;
+    grid-template-areas:
+        "h h h h h"
+        "b a a a j"
+        "f f f f f";
+}
+
+header {
+    grid-area: h;
+}
+
+article {
+    
+    grid-area: a;
+}
+
+#bal {
+    
+    grid-area: b;
+}
+
+#jobb {
+    grid-area: j;
+}
+
+footer {
+    grid-area: f;
+}
+
+img {
+    width: 100px;
+    max-width:100%;
+}
