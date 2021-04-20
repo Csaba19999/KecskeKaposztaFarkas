@@ -17,7 +17,7 @@ const kepObjfarkas = {
 };
 
 const KepObjTomb = [kepObjkecske, kepObjkaposzta, kepObjfarkas];
-const balpart = [kepObjkecske.cim, kepObjkaposzta.cim, kepObjfarkas.cim ];
+const balpart = [kepObjkecske.cim, kepObjkaposzta.cim, kepObjfarkas.cim];
 var eleresiUt = [];
 var csonak = [];
 var jobbpart = [];
@@ -39,7 +39,6 @@ function init() {
 
     function beilleszt(index) {
         eleresiUt.push(KepObjTomb[index].kep);
-        //console.log(eleresiUt);
     }
 
 
@@ -66,22 +65,22 @@ function init() {
     }
 
     function JobbrolBalra() {
-            ismetles = true;
-            var azon = this.id;
-            this.classList.toggle("rejtettIMG");
-            $("article img")[azon].classList.toggle("rejtettIMG");
-            $("article img")[azon].classList.add("jobbOldalPart");
-            $("article img")[azon].classList.remove("balOldalPart");
+        ismetles = true;
+        var azon = this.id;
+        this.classList.toggle("rejtettIMG");
+        $("article img")[azon].classList.toggle("rejtettIMG");
+        $("article img")[azon].classList.add("jobbOldalPart");
+        $("article img")[azon].classList.remove("balOldalPart");
 
     }
 
     function BalrólJobbra() {
-            ismetles = false;
-            var azon = this.id - 6;
-            this.classList.toggle("rejtettIMG");
-            $("article img")[azon].classList.toggle("rejtettIMG");
-            $("article img")[azon].classList.add("balOldalPart");
-            $("article img")[azon].classList.remove("jobbOldalPart");
+        ismetles = false;
+        var azon = this.id - 6;
+        this.classList.toggle("rejtettIMG");
+        $("article img")[azon].classList.toggle("rejtettIMG");
+        $("article img")[azon].classList.add("balOldalPart");
+        $("article img")[azon].classList.remove("jobbOldalPart");
     }
 
     function Megjelenítes() {
